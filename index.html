@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的個人簡歷</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>邱家璿</h1>
+            <p>醫學資訊與創新應用學生</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">關於我</a></li>
+                    <li><a href="#skills">技能</a></li>
+                    <li><a href="#experience">經歷</a></li>
+                    <li><a href="#projects">作品集</a></li>
+                    <li><a href="#contact">聯絡</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="container">
+        <h2>關於我</h2>
+        <div class="profile">
+            <img src="https://via.placeholder.com/150" alt="Profile Picture">
+            <p>我是輔仁大學醫資學程學生，興趣是待在家聽音樂，看動漫或滑reels</p>
+        </div>
+    </section>
+
+    <section id="skills" class="container">
+        <h2>技能展示</h2>
+        <div class="skills-content">
+            <div class="skill-item">
+                <span>Python</span>
+                <div class="progress-bar"><div class="fill" style="width: 10%"></div></div>
+            </div>
+            <div class="skill-item">
+                <span>Piano</span>
+                <div class="progress-bar"><div class="fill" style="width: 60%"></div></div>
+            </div>
+            <div class="skill-item">
+                <span>Git/GitHub</span>
+                <div class="progress-bar"><div class="fill" style="width: 10%"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="container">
+        <h2>經歷</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>國際運算思維挑戰賽 (Bebras)</h3>
+                <span class="date">2022</span>
+                <p>九、十年級組獲得 250/300 分，全國 PR 96。</p>
+                <img src="cert.jpg" alt="運算思維證書" style="width: 100%; max-width: 400px; margin-top: 10px; border-radius: 5px;">
+            </div>
+
+            <div class="timeline-item">
+                <h3>高中程式研究社</h3>
+                <span class="date">2023</span>
+                <p>擔任社員。</p>
+            </div>
+            <div class="timeline-item">
+                <h3>高中選修Python課程</h3>
+                <span class="date">2024</span>
+                <p>學習基礎Python語法。</p>
+            </div>
+            <div class="timeline-item">
+                <h3>輔仁大學</h3>
+                <span class="date">2025</span>
+                <p>錄取醫學資訊與創新應用學士學位學程。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>作品集</h2>
+        <div class="project-grid">
+            <div class="card">
+                <img src="project1.jpg" alt="Java BMI Code" style="width: 100%; height: 180px; object-fit: cover; border-radius: 5px;">
+                <h3>BMI 計算器 (Java)</h3>
+                <p>使用 Java 撰寫，運用 Scanner 讀取身高體重並計算 BMI 值。</p>
+                <span class="tag">Java</span>
+            </div>
+            
+            <div class="card">
+                <img src="project2.jpg" alt="Pandas Code" style="width: 100%; height: 180px; object-fit: cover; border-radius: 5px;">
+                <h3>Gapminder 資料分析</h3>
+                <p>使用 Python Pandas 篩選出台灣與亞洲地區的數據資料。</p>
+                <span class="tag">Python Pandas</span>
+            </div>
+
+            <div class="card">
+                <img src="project3.png" alt="Wave Pattern Code" style="width: 100%; height: 180px; object-fit: cover; border-radius: 5px;">
+                <h3>邏輯圖形輸出</h3>
+                <p>利用巢狀迴圈與數學邏輯，印出使用者指定的波浪圖案。</p>
+                <span class="tag">演算法</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>聯絡方式</h2>
+        <p>Email: a10855249@gmail.com</p>
+        <p>GitHub: <a href="https://github.com/414570289chiu" target="_blank">https://github.com/414570289chiu</a></p>
+    </section>
+
+    <footer>
+        <p>Copyright © 2025 by Me</p>
+    </footer>
+
+    <script>
+        // 平滑捲動效果
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
